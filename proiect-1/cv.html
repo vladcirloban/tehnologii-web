@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- Declarăm tipul documentului ca HTML5 -->
+<html lang="en">
+<head>
+    <!-- Specificăm setul de caractere folosit, în acest caz UTF-8 pentru suport complet de caractere -->
+    <meta charset="UTF-8">
+
+    <!-- Asigurăm compatibilitatea cu dispozitivele mobile prin setarea ferestrei de vizualizare, astfel încât conținutul să fie redimensionat corespunzător pe ecrane mici -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titlul paginii, afișat în bara de titlu a browser-ului și în fila paginii -->
+    <title>CV</title>
+
+    <!-- Link către fișierul CSS extern pentru a aplica stiluri elementelor HTML din pagină -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> <!-- Secțiunea de antet a paginii, care conține meniul de navigare -->
+        <nav> <!-- Bara de navigare -->
+            <ul> <!-- Lista meniului de navigare cu link-uri interne către alte pagini ale site-ului -->
+                <li><a href="home.html">Home</a></li> <!-- Link către pagina principală -->
+                <li><a href="cv.html">CV</a></li> <!-- Link către pagina de CV -->
+                <li><a href="contact.html">Contact</a></li> <!-- Link către pagina de contact -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conținutul principal al paginii -->
+    <main>
+        <section> <!-- Prima secțiune din pagină, care conține informații despre educație și competențe -->
+            <h1>Curriculum Vitae</h1> <!-- Titlul principal al paginii, indicând CV-ul -->
+
+            <!-- Secțiunea dedicată educației -->
+            <h2>Education</h2> <!-- Primul subtitlu -->
+            <ul> <!-- Listă neordonată pentru instituțiile de învățământ -->
+                <li><strong>Polytechnic University of Bucharest:</strong> 2023 - present</li>
+                <li><strong>Theoretical High School "Mihai Viteazul" of Caracal:</strong> 2019 - 2023</li>
+            </ul>
+
+            <!-- Secțiunea dedicată competențelor -->
+            <h2>Competences</h2> <!-- Al doilea subtitlu -->
+            <ul> <!-- Listă neordonată pentru competențele dobândite -->
+                <li>Good command of tools in the Microsoft Office suite</li>
+                <li>Decent rendering of GUIs for simple video games</li>
+                <li>Excellent ability to explain mathematical knowledge</li>
+            </ul>
+        </section>
+
+        <!-- Secțiune dedicată descărcării CV-ului -->
+        <section>
+            <!-- Link pentru descărcarea CV-ului ca fișier HTML, cu denumire personalizată -->
+            <a href="cv.html" download="CV - Vlad Cirloban.html">Download the CV</a>
+        </section>
+    </main>
+</body>
+</html>

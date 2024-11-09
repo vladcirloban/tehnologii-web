@@ -1,0 +1,143 @@
+/* Reset de bază */
+* {
+    margin: 0; /* Eliminăm marginile implicite */
+    padding: 0; /* Eliminăm spațierile implicite */
+    box-sizing: border-box; /* Asigurăm că padding-ul și marginile nu afectează dimensiunea totală a elementelor */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Setăm fontul principal */
+    line-height: 1.6; /* Stabilim înălțimea liniei pentru lizibilitate */
+    color: #333; /* Setăm culoarea textului principal */
+    background-color: #f9f9f9; /* Setăm culoarea de fundal a paginii */
+}
+
+/* Structura de bază pentru antet */
+header {
+    background-color: #007BFF; /* Culoarea de fundal a antetului */
+    color: white; /* Culoarea textului din antet */
+    padding: 1rem 0; /* Spațiu interior de 1rem pe verticală */
+    text-align: center; /* Centrarea conținutului antetului */
+}
+
+header nav ul {
+    list-style: none; /* Eliminăm marcatorilor de listă */
+}
+
+header nav ul li {
+    display: inline; /* Afișăm elementele listei pe același rând */
+    margin: 0 10px; /* Spațiu între link-uri */
+}
+
+header nav ul li a {
+    color: white; /* Setăm culoarea textului link-urilor */
+    text-decoration: none; /* Eliminăm sublinierea link-urilor */
+    font-weight: bold; /* Setăm link-urile îngroșat */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Adăugăm subliniere la trecerea mouse-ului peste link */
+}
+
+/* Conținutul principal */
+main {
+    padding: 2rem; /* Spațiu interior de 2rem */
+    max-width: 800px; /* Lățimea maximă a secțiunii principale */
+    margin: 0 auto; /* Centrarea secțiunii pe orizontală */
+    background-color: white; /* Fundal alb pentru conținut */
+    border-radius: 8px; /* Colțuri rotunjite */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră pentru un efect de adâncime */
+}
+
+h1 {
+    font-size: 2rem; /* Dimensiunea titlului principal */
+    color: #333; /* Culoarea textului */
+    margin-bottom: 1rem; /* Spațiu sub titlu */
+}
+
+h2 {
+    font-size: 1.5rem; /* Dimensiunea titlurilor de nivel doi */
+    color: #333;
+    margin-bottom: 0.5rem; /* Spațiu sub titlurile de nivel doi */
+}
+
+p {
+    margin-bottom: 1rem; /* Spațiu între paragrafe */
+}
+
+/* Lista pentru competențe și educație */
+ul {
+    margin: 1rem 0; /* Spațiu sus și jos pentru listă */
+    padding-left: 1.2rem; /* Spațiere față de marginea din stânga */
+}
+
+ul li {
+    margin-bottom: 0.5rem; /* Spațiu între elementele listei */
+}
+
+/* Imagini */
+img {
+    max-width: 100%; /* Redimensionăm imaginea în funcție de container */
+    height: auto; /* Păstrăm proporțiile imaginii */
+    border-radius: 8px; /* Colțuri rotunjite pentru imagini */
+}
+
+/* Stiluri pentru formularul de contact */
+form {
+    display: flex; /* Folosim flexbox pentru layout */
+    flex-direction: column; /* Afișăm elementele pe coloane */
+}
+
+form label {
+    margin: 1rem 0 0.5rem; /* Spațiu între etichete și câmpuri */
+}
+
+form input, form textarea {
+    padding: 0.5rem; /* Spațiu interior în câmpurile de text */
+    border: 1px solid #ccc; /* Bordură subțire de culoare gri */
+    border-radius: 4px; /* Colțuri rotunjite pentru câmpuri */
+    font-size: 1rem; /* Dimensiunea textului */
+}
+
+form button {
+    background-color: #007BFF; /* Culoarea butonului */
+    color: white; /* Culoarea textului */
+    border: none; /* Eliminăm bordura */
+    padding: 0.7rem; /* Spațiu interior */
+    border-radius: 4px; /* Colțuri rotunjite pentru buton */
+    font-size: 1rem; /* Dimensiunea textului butonului */
+    cursor: pointer; /* Cursorul se schimbă la pointer pentru a indica interactivitatea */
+    margin-top: 1rem; /* Spațiu între câmpuri și buton */
+    margin-bottom: 2rem; /* Spațiu sub buton */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Culoare mai închisă la trecerea mouse-ului */
+}
+
+/* Subsol */
+footer {
+    text-align: center; /* Centrarea textului */
+    padding: 1.5rem 0; /* Adăugare spațiu în partea de sus și jos */
+    background-color: #1a3d5d; /* Culoarea de fundal a subsolului */
+    color: white; /* Culoarea textului */
+    margin-top: 2rem; /* Spațiu față de secțiunea anterioară */
+}
+
+/* Stiluri pentru link-urile către rețelele de socializare */
+.social-links {
+    margin-top: 1rem; /* Spațiu între text și iconițe */
+}
+
+.social-links .social-link {
+    margin: 0 10px; /* Spațiu între iconițe */
+    color: white; /* Culoarea iconițelor */
+    font-size: 24px; /* Dimensiunea iconițelor */
+    transition: color 0.3s ease, transform 0.3s ease; /* Tranziție pentru schimbarea culorii și scalare */
+    text-decoration: none; /* Eliminăm sublinierea link-urilor */
+}
+
+.social-links .social-link:hover {
+    color: #ffcc00; /* Culoarea iconiței la hover */
+    transform: scale(1.2); /* Mărirea iconiței la trecerea mouse-ului */
+}
