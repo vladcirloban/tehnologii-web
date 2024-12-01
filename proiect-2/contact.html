@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- Declarăm tipul documentului ca HTML5 -->
+<html lang="en">
+<head>
+    <!-- Specificăm setul de caractere folosit, în acest caz UTF-8 pentru suport complet de caractere -->
+    <meta charset="UTF-8" />
+
+    <!-- Asigurăm compatibilitatea cu dispozitivele mobile prin setarea ferestrei de vizualizare, astfel încât conținutul să fie redimensionat corespunzător pe ecrane mici -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Titlul paginii, afișat în bara de titlu a browser-ului și în fila paginii -->
+    <title>Contact</title>
+
+    <!-- Link către fișierul CSS extern pentru a aplica stiluri elementelor HTML din pagină -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Link către fișierul CSS extern pentru a utiliza iconițele Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header> <!-- Secțiunea de antet a paginii, care conține meniul de navigare -->
+        <nav> <!-- Bara de navigare -->
+            <ul> <!-- Lista meniului de navigare cu link-uri interne către alte pagini ale site-ului -->
+              <li><a href="home.html">Home</a></li> <!-- Link către pagina principală -->
+              <li><a href="cv.html">CV</a></li> <!-- Link către pagina de CV -->
+              <li><a href="contact.html">Contact</a></li> <!-- Link către pagina de contact -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conținutul principal al paginii de contact -->
+    <main>
+        <section> <!-- Prima secțiune din pagină, dedicată formularului de contact -->
+            <h1>Contact me</h1> <!-- Titlul secțiunii, invitând utilizatorii să ia legătura -->
+                <!-- 
+                Formular de contact care trimite un e-mail prin „mailto”
+                Folosim method="get" pentru a trimite datele în URL
+                -->
+                <form action="mailto:vlad.cirloban@stud.acs.upb.ro" method="get">
+                    <label for="subject">Subject:</label> <!-- Etichetă pentru câmpul de subiect -->
+                    <input type="text" id="subject" name="subject" required /> <!-- Câmp de text pentru subiectul mesajului, obligatoriu -->
+
+                    <label for="body">Message:</label> <!-- Etichetă pentru câmpul de mesaj -->
+                    <textarea id="body" name="body" rows="5" required></textarea> <!-- Câmp de zonă de text pentru mesaj, obligatoriu -->
+
+                    <button type="submit">Send</button> <!-- Buton de trimitere a formularului, care va deschide aplicația de e-mail cu subiectul și mesajul completat -->
+                </form>
+        </section>
+
+        <section> <!-- A doua secțiune din pagină, dedicată adresei și integrării hărții -->
+            <h2>My address</h2> <!-- Titlul secțiunii, specificând locația -->
+
+            <!-- Integrarea hărții Google Maps, folosind „iframe” pentru a încorpora locația specificată -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6023.233159467126!2d26.052396135341542!3d44.44494486992335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDTCsDI2JzQ0LjEiTiAyNsKwMDMnMTYuOCJF!5e1!3m2!1sen!2sro!4v1733039864082!5m2!1sen!2sro"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+
+    <!-- Subsolul paginii -->
+    <footer>
+        <!-- Secțiunea de link-uri către rețelele de socializare -->
+        <div class="social-links">
+            <!-- Link către profilul de Facebook -->
+            <a href="https://www.facebook.com/vladcirloban" target="_blank" class="social-link">
+                <i class="bi bi-facebook"></i> <!-- Iconița de Facebook, furnizată de Bootstrap Icons -->
+            </a>
+
+            <!-- Link către profilul de Instagram -->
+            <a href="https://www.instagram.com/vladcirloban" target="_blank" class="social-link">
+                <i class="bi bi-instagram"></i> <!-- Iconița de Instagram, furnizată de Bootstrap Icons -->
+            </a>
+
+            <!-- Link către profilul de GitHub -->
+            <a href="https://github.com/vladcirloban" target="_blank" class="social-link">
+                <i class="bi bi-github"></i> <!-- Iconița de GitHub, furnizată de Bootstrap Icons -->
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

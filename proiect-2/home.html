@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- Declarăm tipul documentului ca HTML5 -->
+<html lang="ro">
+<head>
+    <!-- Specificăm setul de caractere folosit, în acest caz UTF-8 pentru suport complet de caractere -->
+    <meta charset="UTF-8">
+
+    <!-- Asigurăm compatibilitatea cu dispozitivele mobile prin setarea ferestrei de vizualizare, astfel încât conținutul să fie redimensionat corespunzător pe ecrane mici -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titlul paginii, afișat în bara de titlu a browser-ului și în fila paginii -->
+    <title>Home</title>
+
+    <!-- Link către fișierul CSS extern pentru a aplica stiluri elementelor HTML din pagină -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link către fișierul CSS extern pentru a utiliza iconițele Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header> <!-- Secțiunea de antet a paginii, care conține meniul de navigare -->
+        <nav> <!-- Bara de navigare -->
+            <ul> <!-- Lista meniului de navigare cu link-uri interne către alte pagini ale site-ului -->
+                <li><a href="home.html">Home</a></li> <!-- Link către pagina principală -->
+                <li><a href="cv.html">CV</a></li> <!-- Link către pagina de CV -->
+                <li><a href="contact.html">Contact</a></li> <!-- Link către pagina de contact -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conținutul principal al paginii -->
+    <main>
+        <section> <!-- Prima secțiune din pagina principală, care conține o poză și o biografie -->
+            <h1>My personal website</h1> <!-- Titlul paginii -->
+            <img src="photo.jpg" alt="My profile picture" width="300"> <!-- Se afișează poza; „src” specifică locația fișierului, iar „alt” oferă o descriere pentru accesibilitate -->
+            
+            <!-- Primul paragraf al biografiei -->
+            <p>
+                Hello! I'm <strong>Vlad Cîrloban</strong>, a 20-year-old student with a passion for mathematics and anything related to technology, who always likes to try something new. For now, I am completing the cycle of undergraduate studies at the Faculty of Automatic Control and Computer Science within the Polytechnic University of Bucharest.
+            </p>
+            <!-- 
+            Tag-ul <strong> este folosit pentru a evidenția numele în text
+            -->
+
+            <!-- Al doilea paragraf al biografiei -->
+            <p>
+                In my spare time, I enjoy blending my passion for technology by working on projects aimed at people who want to deepen their understanding of mathematics. Feel free to browse my portfolio or reach out to connect!
+            </p>
+        </section>
+    </main>
+
+    <!-- Subsolul paginii -->
+    <footer>
+        <!-- Secțiunea de link-uri către rețelele de socializare -->
+        <div class="social-links">
+            <!-- Link către profilul de Facebook -->
+            <a href="https://www.facebook.com/vladcirloban" target="_blank" class="social-link">
+                <i class="bi bi-facebook"></i> <!-- Iconița de Facebook, furnizată de Bootstrap Icons -->
+            </a>
+
+            <!-- Link către profilul de Instagram -->
+            <a href="https://www.instagram.com/vladcirloban" target="_blank" class="social-link">
+                <i class="bi bi-instagram"></i> <!-- Iconița de Instagram, furnizată de Bootstrap Icons -->
+            </a>
+
+            <!-- Link către profilul de GitHub -->
+            <a href="https://github.com/vladcirloban" target="_blank" class="social-link">
+                <i class="bi bi-github"></i> <!-- Iconița de GitHub, furnizată de Bootstrap Icons -->
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
